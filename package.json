@@ -1,0 +1,18 @@
+{
+  "name": "quickstart-contact-node",
+  "version": "1.0.0",
+  "description": "This sample repo will show you how to easily do X with Nylas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "nylas": "^7.2.1"
+  }
+}

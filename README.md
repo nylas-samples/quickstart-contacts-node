@@ -1,45 +1,32 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# How to run
 
-## Setup
+1. Install the required packages
 
-### System dependencies
+```bash
+npm install
+```
 
-- Add System dependencies
+2. Run the project
 
-### Gather environment variables
+```bash
+npm start
+```
 
-You'll need the following values from the Nylas Dashboard:
+3. In the Nylas dashboard, create a new application and set the Google connector redirect URL to `http://localhost:3000/oauth/exchange`
+
+4. env variables
+
+```env
+NYLAS_CLIENT_ID=
+NYLAS_API_KEY=
+NYLAS_API_URI=https://api.us.nylas.com
+EMAIL=<RECIPIENT_EMAIL_ADDRESS_HERE>
+```
+
+5. Open your browser and go to `http://localhost:3000/nylas/auth` and log in and end user account
+
+6. After authenticating an end user account, you can visit the following URLs to get a feel for some of what you can do with the Nylas Email API.
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+http://localhost:3000/nylas/create-contact
 ```
-
-Add the above values to a `.env` file.
-
-The `.env` file is added to `.gitignore`. Ensure to store these values securely.
-
-### Install dependencies
-
-[replace with install steps]
-```bash
-$ npm i
-```
-
-## Usage
-
-The recommended way to use this sample is ...
-
-You can also clone the repository ...
-
-You'll find more detailed instructions ...
-
-## Get support
-
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
-
-## Learn more
-
-Visit our [Nylas documentation](https://developer.nylas.com/) to learn more.
